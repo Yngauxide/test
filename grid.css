@@ -1,0 +1,37 @@
+body{
+       /* background-color: black; */
+       padding: 250px 50px;
+       background-image: url("file:///home/hp/Downloads/activa-6g-right-front-three-quarter.webp");
+}
+
+.item1 { grid-area: nav1; }
+.item2 { grid-area: nav2; }
+.item3 { grid-area: nav3; }
+.item4 { grid-area: main; }
+.item5 { grid-area: aside; }
+.item6 { grid-area: footer; }
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'nav2 nav2 nav3 nav3 aside aside'
+    'main main main footer footer footer'
+     'nav1 nav1 nav1 nav1 nav1 nav1';
+  gap: 10px;
+  
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: #00FFFF;
+  text-align: center;
+  padding: 20px
+}
+
+::first-letter{
+  font-size: 2rem;
+  font-weight: 700;
+  color: brown;
+}
